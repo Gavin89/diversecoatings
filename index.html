@@ -72,12 +72,12 @@
       width: 4px;
       height: 4px;
       border-radius: 50%;
-      background: rgba(52, 152, 219, 0.3);
+      background: rgba(231, 76, 60, 0.4);
       box-shadow: 
-        8px -2px 0 1px rgba(52, 152, 219, 0.25),
-        16px 1px 0 0px rgba(52, 152, 219, 0.2),
-        24px -1px 0 -1px rgba(52, 152, 219, 0.15),
-        32px 2px 0 -2px rgba(52, 152, 219, 0.1);
+        8px -2px 0 1px rgba(155, 89, 182, 0.35),
+        16px 1px 0 0px rgba(52, 152, 219, 0.3),
+        24px -1px 0 -1px rgba(26, 188, 156, 0.25),
+        32px 2px 0 -2px rgba(241, 196, 15, 0.2);
       animation: spray 3s ease-in-out infinite;
       pointer-events: none;
     }
@@ -260,7 +260,7 @@
       margin-bottom: 30px;
     }
     
-    /* About section - purple/blue rainbow border */
+    /* About section - vibrant purple/blue rainbow border */
     #about::before{
       content: '';
       position: absolute;
@@ -269,8 +269,8 @@
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #9b59b6, #8e44ad);
-      border: 1px solid #7d3c98;
+      background: linear-gradient(135deg, #e74c3c, #c0392b);
+      border: 1px solid #a93226;
     }
     #about::after{
       content: '';
@@ -280,12 +280,12 @@
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #3498db, #2980b9);
-      border: 1px solid #2471a3;
+      background: linear-gradient(135deg, #9b59b6, #8e44ad);
+      border: 1px solid #7d3c98;
       z-index: 2;
     }
     
-    /* Contact section - green/yellow rainbow border */
+    /* Contact section - vibrant green/yellow rainbow border */
     #contact::before{
       content: '';
       position: absolute;
@@ -294,8 +294,8 @@
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #27ae60, #229954);
-      border: 1px solid #1e8449;
+      background: linear-gradient(135deg, #2ecc71, #27ae60);
+      border: 1px solid #229954;
     }
     #contact .contact-dot{
       position: absolute;
@@ -304,8 +304,8 @@
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #f39c12, #e67e22);
-      border: 1px solid #d68910;
+      background: linear-gradient(135deg, #f1c40f, #f39c12);
+      border: 1px solid #e67e22;
       z-index: 2;
     }
     .card{
@@ -327,8 +327,8 @@
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #ff6b6b, #ee5a24);
-      border: 1px solid #ff3838;
+      background: linear-gradient(135deg, #3498db, #2980b9);
+      border: 1px solid #2471a3;
     }
     .card::after{
       content: '';
@@ -338,8 +338,8 @@
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #4ecdc4, #26d0ce);
-      border: 1px solid #00b894;
+      background: linear-gradient(135deg, #1abc9c, #16a085);
+      border: 1px solid #138d75;
     }
     footer{
       text-align:center;
@@ -489,13 +489,41 @@
         display: inline-block;
         max-width: 100%;
       }
+      
+      /* Mobile color dots alignment fix */
+      #contact::before{
+        left: 15px;
+        top: -6px;
+        width: 10px;
+        height: 10px;
+      }
+      #contact .contact-dot{
+        left: 30px;
+        top: -6px;
+        width: 10px;
+        height: 10px;
+      }
+      
+      /* About section mobile dots */
+      #about::before{
+        left: 15px;
+        top: -6px;
+        width: 10px;
+        height: 10px;
+      }
+      #about::after{
+        left: 30px;
+        top: -6px;
+        width: 10px;
+        height: 10px;
+      }
     }
     
     /* Paint palette decorative elements */
     .paint-blob{
       position: absolute;
       border-radius: 50% 40% 60% 30%;
-      opacity: 0.1;
+      opacity: 0.12;
       pointer-events: none;
     }
     .paint-blob-1{
@@ -503,7 +531,7 @@
       left: -5%;
       width: 80px;
       height: 70px;
-      background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+      background: linear-gradient(45deg, #e74c3c, #c0392b);
       transform: rotate(15deg);
     }
     .paint-blob-2{
@@ -511,7 +539,7 @@
       right: -8%;
       width: 60px;
       height: 85px;
-      background: linear-gradient(45deg, #4ecdc4, #26d0ce);
+      background: linear-gradient(45deg, #9b59b6, #8e44ad);
       transform: rotate(-20deg);
     }
     .paint-blob-3{
@@ -519,7 +547,7 @@
       left: -3%;
       width: 45px;
       height: 55px;
-      background: linear-gradient(45deg, #feca57, #ff9f43);
+      background: linear-gradient(45deg, #f1c40f, #f39c12);
       transform: rotate(45deg);
     }
   </style>
