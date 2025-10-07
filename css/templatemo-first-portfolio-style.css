@@ -507,7 +507,7 @@ strong {
 .hero-image-wrap {
   background: var(--white-color);
   border-radius: 100%;
-  width: 350px;
+  width: px;
   height: 350px;
   position: absolute;
   z-index: 22;
