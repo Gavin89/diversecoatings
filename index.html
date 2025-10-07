@@ -229,6 +229,24 @@
       .card h4{
         font-size: 18px;
       }
+      
+      /* Contact section responsive styling */
+      #contact{
+        overflow: hidden;
+      }
+      #contact p{
+        line-height: 1.6;
+        margin-bottom: 16px;
+      }
+      #contact strong{
+        display: block;
+        margin-bottom: 4px;
+        color: var(--accent);
+      }
+      #contact br{
+        display: block;
+        margin: 8px 0;
+      }
     }
     
     @media (max-width: 480px) {
@@ -248,6 +266,18 @@
       nav a{
         font-size: 12px;
         padding: 6px 8px;
+      }
+      
+      /* Contact section mobile fixes */
+      #contact p{
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+      }
+      #contact a{
+        word-break: break-all;
+        display: inline-block;
+        max-width: 100%;
       }
     }
     
