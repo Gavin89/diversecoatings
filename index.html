@@ -180,6 +180,77 @@
       border-bottom: 2px solid rgba(0,0,0,0.06);
     }
     
+    /* Mobile responsive styles */
+    @media (max-width: 768px) {
+      .nav-inner{
+        padding: 0 15px;
+        gap: 10px;
+      }
+      .brand{
+        padding: 6px 12px;
+        gap: 10px;
+        min-width: 0;
+        flex-shrink: 0;
+      }
+      .brand h1{
+        font-size: 16px;
+        line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .brand img{
+        height: 40px;
+        flex-shrink: 0;
+      }
+      nav{
+        display: flex;
+        gap: 5px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      nav a{
+        font-size: 13px;
+        padding: 8px 10px;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+      main{
+        padding: 0 15px 60px;
+        margin: 20px auto;
+      }
+      .services-grid{
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+      .card{
+        padding: 18px;
+      }
+      .card h4{
+        font-size: 18px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .nav-inner{
+        padding: 0 10px;
+      }
+      .brand{
+        padding: 4px 8px;
+        gap: 8px;
+      }
+      .brand h1{
+        font-size: 14px;
+      }
+      .brand img{
+        height: 35px;
+      }
+      nav a{
+        font-size: 12px;
+        padding: 6px 8px;
+      }
+    }
+    
     /* Paint palette decorative elements */
     .paint-blob{
       position: absolute;
@@ -291,9 +362,8 @@
       <h3>Contact Us</h3>
       <p>We’d love to hear from you. Whether you’re planning a major industrial project or need expert advice on coatings, 
       our team is ready to help.</p>
-      <p><strong>Email:</strong> <a href="mailto:hello@diversecoatings.example">hello@diversecoatings.example</a><br>
-         <strong>Phone:</strong> +44 1234 567890<br>
-         <strong>Address:</strong> Diverse Coatings Solutions, Birmingham, UK</p>
+      <p><strong>Email:</strong> <a href="mailto:info@diversecoatings.solutions">info@diversecoatings.solutions</a><br>
+         <strong>Phone:</strong> +44 7368454850<br>
     </section>
 
     <footer>© <span id="year"></span> Diverse Coatings Solutions — All rights reserved.</footer>
